@@ -6,8 +6,10 @@
   <meta name="author" content="zchengsite, 1451426471@qq.com" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
+    <meta name="robots" content="noindex" />
   
-  <title>es6 async await 加载 | Hexo</title>
+  
+  <title>Hexo</title>
 
   
     <link rel="apple-touch-icon" href="/images/favicon.png">
@@ -84,99 +86,62 @@
 
 
       <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
-
-
-
-  
-
-  
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title">es6 async await 加载</div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
-          2020-08-25
-        </span>
-        
-              <span class="post-tags">
-                <i class="iconfont icon-tags" title="标签 | tags"></i>
-                
-                <span class="span--tag">
-                  <a href="/tags/ECMAScript-6/" title="查看 ECMAScript 6 标签">
-                    <b>#</b> ECMAScript 6
-                  </a>
-                </span>
-                
-              </span>
-          
-      </div>
-      <div class="markdown-body">
-        <p>init1(){<br>return new Promise((resolve, reject) =&gt; {<br>    api.get(‘url’, null).then( res =&gt; {<br>       //自己的操作<br>        resolve()<br>    }).catch(err =&gt; {<br>        reject()<br>    });<br>});<br>};<br>init2(){<br>return new Promise((resolve, reject) =&gt; {<br>    api.get(‘url’, null).then( res =&gt; {<br>       //自己的操作<br>        resolve()<br>    }).catch(err =&gt; {<br>        reject()<br>    });<br>});<br>};</p>
-<p>//调用<br>Promise.all([this.init1(),this.init2()]).then(() =&gt; {<br>    //两个都调成功以后执行的操作<br>//主要是loading问题<br>}).catch(err =&gt; {<br>    // 抛出错误信息<br>});</p>
-<p>async init(){<br>    await this.init1()<br>    await this.init2()<br>} </p>
-
-      </div>
-      
-        <div class="prev-or-next">
-          <div class="post-foot-next">
+        <div class="container index">
+  <div class="post-list">
+    
+      <div class="post-item" title="1.2W字 | 了不起的 TypeScript 入门教程">
+        <div class="time-m-d">2020-08-26</div>
+        <div class="title">
+          <a href="/2020/08/26/1-2W%E5%AD%97-%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84-TypeScript-%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/">
             
-              <a href="/2020/08/25/title/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>PREV</span>
-              </a>
+            <span>1.2W字 | 了不起的 TypeScript 入门教程</span>
             
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
-              2020-08-25
-            </span>
-            
-                  <span class="post-tags">
-                    <i class="iconfont icon-tags" title="标签 | tags"></i>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/ECMAScript-6/" title="查看 ECMAScript 6 标签">
-                        <b>#</b> ECMAScript 6
-                      </a>
-                    </span>
-                    
-                  </span>
-              
-          </div>
-          <div class="post-foot-prev">
-            
-              <a href="/2020/08/26/1-2W%E5%AD%97-%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84-TypeScript-%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" target="_self">
-                <span>NEXT</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
-            
-          </div>
+          </a>
         </div>
-      
-    </div>
+      </div>
     
-
+      <div class="post-item" title="es6 async await 加载">
+        <div class="time-m-d">2020-08-25</div>
+        <div class="title">
+          <a href="/2020/08/25/es6-async-await-%E5%8A%A0%E8%BD%BD/">
+            
+            <span>es6 async await 加载</span>
+            
+          </a>
+        </div>
+      </div>
     
-      <div class="comments-container">
-        
-
-
-
-
-
+      <div class="post-item" title="vue中js判断长时间不操作界面自动退出登录">
+        <div class="time-m-d">2020-08-25</div>
+        <div class="title">
+          <a href="/2020/08/25/title/">
+            
+            <span>vue中js判断长时间不操作界面自动退出登录</span>
+            
+          </a>
+        </div>
+      </div>
+    
+      <div class="post-item" title="Hello World">
+        <div class="time-m-d">2020-08-25</div>
+        <div class="title">
+          <a href="/2020/08/25/hello-world/">
+            
+            <span>Hello World</span>
+            
+          </a>
+        </div>
       </div>
     
   </div>
-
+  <nav class="post-navigation">
+    
+      <a href="/"><i class="iconfont icon-angleleft"></i></a>
+    
+    <span class="page-num">2 / 2</span>
+    
+  </nav>
+</div>
 
         <div class="footer">
   <div class="social">

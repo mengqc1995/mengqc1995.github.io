@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   
-  <title>es6 async await 加载 | Hexo</title>
+  <title>标签: webpack | Hexo</title>
 
   
     <link rel="apple-touch-icon" href="/images/favicon.png">
@@ -84,99 +84,39 @@
 
 
       <div class="flex-container">
-        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
-<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+        <!-- 标签详情页，展示某个标签下的文章列表，url形式：https://yoursite/tags/某个标签/ -->
 
-
-
-  
-
-  
-
-  
-
-  
-  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
-  <div class="container post-details" id="post-details">
-    <div class="post-content">
-      <div class="post-title">es6 async await 加载</div>
-      <div class="post-attach">
-        <span class="post-pubtime">
-          <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
-          2020-08-25
-        </span>
-        
-              <span class="post-tags">
-                <i class="iconfont icon-tags" title="标签 | tags"></i>
-                
-                <span class="span--tag">
-                  <a href="/tags/ECMAScript-6/" title="查看 ECMAScript 6 标签">
-                    <b>#</b> ECMAScript 6
-                  </a>
-                </span>
-                
-              </span>
-          
-      </div>
-      <div class="markdown-body">
-        <p>init1(){<br>return new Promise((resolve, reject) =&gt; {<br>    api.get(‘url’, null).then( res =&gt; {<br>       //自己的操作<br>        resolve()<br>    }).catch(err =&gt; {<br>        reject()<br>    });<br>});<br>};<br>init2(){<br>return new Promise((resolve, reject) =&gt; {<br>    api.get(‘url’, null).then( res =&gt; {<br>       //自己的操作<br>        resolve()<br>    }).catch(err =&gt; {<br>        reject()<br>    });<br>});<br>};</p>
-<p>//调用<br>Promise.all([this.init1(),this.init2()]).then(() =&gt; {<br>    //两个都调成功以后执行的操作<br>//主要是loading问题<br>}).catch(err =&gt; {<br>    // 抛出错误信息<br>});</p>
-<p>async init(){<br>    await this.init1()<br>    await this.init2()<br>} </p>
-
-      </div>
-      
-        <div class="prev-or-next">
-          <div class="post-foot-next">
-            
-              <a href="/2020/08/25/title/" target="_self">
-                <i class="iconfont icon-chevronleft"></i>
-                <span>PREV</span>
-              </a>
-            
-          </div>
-          <div class="post-attach">
-            <span class="post-pubtime">
-              <i class="iconfont icon-updatetime" title="更新时间 | updatetime"></i>
-              2020-08-25
-            </span>
-            
-                  <span class="post-tags">
-                    <i class="iconfont icon-tags" title="标签 | tags"></i>
-                    
-                    <span class="span--tag">
-                      <a href="/tags/ECMAScript-6/" title="查看 ECMAScript 6 标签">
-                        <b>#</b> ECMAScript 6
-                      </a>
-                    </span>
-                    
-                  </span>
-              
-          </div>
-          <div class="post-foot-prev">
-            
-              <a href="/2020/08/26/1-2W%E5%AD%97-%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84-TypeScript-%E5%85%A5%E9%97%A8%E6%95%99%E7%A8%8B/" target="_self">
-                <span>NEXT</span>
-                <i class="iconfont icon-chevronright"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-    </div>
-    
-
-    
-      <div class="comments-container">
-        
-
-
-
-
-
-      </div>
-    
+<div class="container tag-details">
+  <div class="content-title">
+    <h2>
+      <span>webpack</span>
+    </h2>
   </div>
-
+  
+    <div class="post-list">
+      <div class="post-item" title="webpack是如何实现动态导入的">
+        <span class="time-m-d">2020-08-26</span>
+        <a href="/2020/08/26/webpack%E6%98%AF%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%8A%A8%E6%80%81%E5%AF%BC%E5%85%A5%E7%9A%84/">
+          <span>webpack是如何实现动态导入的</span>
+        </a>
+      </div>
+    </div>
+  
+    <div class="post-list">
+      <div class="post-item" title="玩转 webpack，使你的打包速度提升 90%">
+        <span class="time-m-d">2020-08-26</span>
+        <a href="/2020/08/26/%E7%8E%A9%E8%BD%AC-webpack%EF%BC%8C%E4%BD%BF%E4%BD%A0%E7%9A%84%E6%89%93%E5%8C%85%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87-90/">
+          <span>玩转 webpack，使你的打包速度提升 90%</span>
+        </a>
+      </div>
+    </div>
+  
+  <nav class="post-navigation">
+    
+    <span class="page-num">1 / 1</span>
+    
+  </nav>
+</div>
 
         <div class="footer">
   <div class="social">
